@@ -1,7 +1,12 @@
 .weather-env
 .cache*
+data/raw/*
+data/processed/*
 logs
 src/__pycache__
 src/data/__pycache__
 utils/__pycache__
 .vscode
+
+!data/raw/.gitkeep
+!data/processed/.gitkeep
