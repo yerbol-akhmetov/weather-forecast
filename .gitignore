@@ -1,0 +1,7 @@
+.weather-env
+.cache*
+logs
+src/__pycache__
+src/data/__pycache__
+utils/__pycache__
+.vscode
