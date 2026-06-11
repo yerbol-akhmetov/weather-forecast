@@ -14,6 +14,7 @@ data_download:
     - dew_point_2m
     - cloud_cover
     - wind_speed_10m
+    - pressure_msl
   wind_speed_unit: ms
   timezone: auto
   archive_url: https://archive-api.open-meteo.com/v1/archive

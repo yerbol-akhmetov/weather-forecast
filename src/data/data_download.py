@@ -64,6 +64,7 @@ def main() -> None:
     hourly_dew_point_2m = hourly.Variables(2).ValuesAsNumpy()
     hourly_cloud_cover = hourly.Variables(3).ValuesAsNumpy()
     hourly_wind_speed_10m = hourly.Variables(4).ValuesAsNumpy()
+    hourly_pressure_msl = hourly.Variables(5).ValuesAsNumpy()
 
     hourly_data = {
         "date": pd.date_range(
@@ -79,6 +80,7 @@ def main() -> None:
     hourly_data["dew_point_2m"] = hourly_dew_point_2m
     hourly_data["cloud_cover"] = hourly_cloud_cover
     hourly_data["wind_speed_10m"] = hourly_wind_speed_10m
+    hourly_data["pressure_msl"] = hourly_pressure_msl
 
     hourly_dataframe = pd.DataFrame(data=hourly_data)
     logger.info("Downloaded %s rows", len(hourly_dataframe))
