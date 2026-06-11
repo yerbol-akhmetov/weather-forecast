@@ -63,19 +63,13 @@ pip install -r requirements.txt
 
 All download settings live in [`configs/config.default.yaml`](configs/config.default.yaml) under the `data_download` section: location, date range, weather variables, and output path.
 
-Run the download script **from the project root**:
+Run from the project root (`weather-forecast/`):
 
 ```bash
 python -m src.data.data_download
 ```
 
-Or:
-
-```bash
-python src/data/data_download.py
-```
-
-The VS Code debug configuration in `.vscode/launch.json` also runs from the project root with the correct `PYTHONPATH`.
+Do not run from inside `src/data/` (for example `python data_download.py`) — imports like `from utils.config` will fail.
 
 ### Output
 
