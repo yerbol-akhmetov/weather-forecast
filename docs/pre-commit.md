@@ -52,6 +52,21 @@ Check only staged files:
 pre-commit run
 ```
 
+Check one or more specific files:
+
+```bash
+pre-commit run --files <filepath>
+pre-commit run --files <filepath1> <filepath2>
+```
+
+Run a single hook on a specific file:
+
+```bash
+pre-commit run <hook-id> --files <filepath>
+```
+
+Only hooks that apply to that file type will run (for example `yamllint` skips `.py` files, `ruff` skips `.yaml` files).
+
 ## How it works on commit
 
 1. You run `git commit`
