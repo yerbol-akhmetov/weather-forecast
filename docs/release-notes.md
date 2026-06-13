@@ -6,6 +6,8 @@ SPDX-License-Identifier: CC-BY-4.0
 
 ## Upcoming release
 
+* Add pre-commit [PR #17](https://github.com/yerbol-akhmetov/weather-forecast/pull/17)
+
 * Add PR template and release notes [PR #15](https://github.com/yerbol-akhmetov/weather-forecast/pull/15)
 
 * Adding sea level atmospheric pressure [PR #14](https://github.com/yerbol-akhmetov/weather-forecast/pull/14)
