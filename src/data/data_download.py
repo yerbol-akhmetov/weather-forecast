@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 import openmeteo_requests
-
 import pandas as pd
 import requests_cache
 from retry_requests import retry
@@ -84,7 +83,11 @@ def main() -> None:
 
     hourly_dataframe = pd.DataFrame(data=hourly_data)
     logger.info("Downloaded %s rows", len(hourly_dataframe))
-    logger.info("Date range: %s to %s", hourly_dataframe["date"].min(), hourly_dataframe["date"].max())
+    logger.info(
+        "Date range: %s to %s",
+        hourly_dataframe["date"].min(),
+        hourly_dataframe["date"].max(),
+    )
     logger.info("Preview:\n%s", hourly_dataframe.head())
 
     hourly_dataframe.to_csv(config_data["output_path"], index=False)

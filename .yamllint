@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText:  Weather-Forecast authors
+#
+# SPDX-License-Identifier: CC0-1.0
+
+extends: default
+
+rules:
+  braces:
+    forbid: false
+  comments:
+    require-starting-space: false
+  document-start: disable
+  new-lines:
+    type: platform
+  line-length:
+    level: warning
+    max: 120
