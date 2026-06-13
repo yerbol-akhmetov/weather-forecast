@@ -57,7 +57,10 @@ source .weather-env/bin/activate
 
 ```bash
 pip install -r requirements.txt
+pre-commit install
 ```
+
+`pre-commit install` sets up automatic lint checks before each commit. See [`docs/pre-commit.md`](docs/pre-commit.md) for details.
 
 ## Downloading data
 
@@ -87,7 +90,3 @@ Edit `configs/config.default.yaml` to change, for example:
 - `hourly_variables` — weather fields from Open-Meteo
 - `latitude` / `longitude` — coordinates
 - `output_path` — where to save the CSV
-
-## License
-
-Code is licensed under [AGPL-3.0-or-later](LICENSES/AGPL-3.0-or-later.txt).

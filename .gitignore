@@ -1,5 +1,6 @@
 .weather-env
 .cache*
+.ruff_cache
 data/raw/*
 data/processed/*
 logs
